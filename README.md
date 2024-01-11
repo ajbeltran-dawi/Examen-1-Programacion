@@ -1,5 +1,6 @@
 
 # Actividades Examen
+Aqui estan los actividades hechas del examen, los he hecho en pseudocodigo primero los hice en papel y los pase aqui a limpio.
 
 ## Act 1
 
@@ -89,12 +90,55 @@ main() {
 		opcio = menu();
 	}
 }
-```
 
+funcion void decimalBinario (int decimal) {
+	while (decimal != 0) {
+		print ( decimal % 2)
+		decimal /= 2
+	}
+}
+
+funcion void binarioDecimal ( long binario){
+	double decimal = 0
+	for (int i = 0; decimal != 0; i++) {
+	int digit = (num) binario % 10
+	decimal += digit * 2^i;
+	binario /= 10
+	}
+	print (decimal)
+}
+
+funcion boolean esParell (int num){
+	if (num%2 == 0){
+		return (true)
+	}else{
+		return (-false)
+	}
+}
+
+funcion void primersNombresParells(int num) {
+	for (int i = 0; i <= num; i++) {
+		if (esParell(i)) {
+			print(i);
+		}
+	}
+}
+
+funcion int menu() {
+	print(“Elije una de los siguientes opciones:”);
+	print(“1. Decimal a binario”);
+	print(“2. Binario a decimal”);
+	print(“3. Es par?”);
+	print(“4. Calcular pares de 0 hasta a n”);
+	print(“0. Exit”);
+
+	return = input();
+}
+```
 ## Act 7
 a)
 ```
-funcion double volumCilindre(double radi, double longitud) {
+funcion double volumCilindre(double radi0, double longitud) {
 	return pi * radi^2 * longitud;
 }
 ```
@@ -109,7 +153,7 @@ funcion double volumPrismaRectangular(double c1, double c2, double c3) {
 ## Act 8
 ```
 main() {
-	println(“Que tenemos que transporta? 1. Liquidos 2. Solidos”);
+	print(“Que tenemos que transporta? 1. Liquidos 2. Solidos”);
 	int opcion = input();
 	while(opcion != 1 || opcion != 2) {
 		print(“No és una opcion valido”);
@@ -146,4 +190,14 @@ main() {
 
 	print(“Tienes que hacer “ + viajes + “ viajes.”);
 }
+
+funcion double volumCilindre(double radi0, double longitud) {
+	return pi * radi^2 * longitud;
+}
+
+funcion double volumPrismaRectangular(double c1, double c2, double c3) {
+	return c1 * c2 * c3;
+}
 ```
+
+
